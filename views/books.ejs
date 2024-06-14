@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Details</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <div class="container">
+      <h1>Book Details</h1>
+      <div class="book-details">
+        <h2><%= book.title %></h2>
+        <p><strong>Author:</strong> <%= book.author %></p>
+        <img src="<%= book.cover_url %>" alt="<%= book.title %> cover image" />
+      </div>
+      <a href="/">Back to Book List</a>
+    </div>
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

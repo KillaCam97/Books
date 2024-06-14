@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+<div class="container">
+  <h1>Book Tracker</h1>
+  <form action="/add-book" method="POST" class="add-book-form">
+    <label for="isbn">ISBN:</label>
+    <input type="text" id="isbn" name="isbn" required />
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+    <button type="submit">Add Book</button>
+  </form>
+  <ul>
+    <% books.forEach(book => { %>
+    <li>
+      <img src="<%= book.cover_url %>" alt="Book cover" />
+      <p><span class="bold-blue-label">Title:</span> <%= book.title %></p>
+      <p><span class="bold-blue-label">ISBN:</span> <%= book.isbn %></p>
+      <p>
+        <span class="bold-blue-label">Description:</span> <%= book.description
+        %>
+      </p>
+      <a href="/edit/<%= book.id %>">Edit</a>
+    </li>
+    <% }) %>
+  </ul>
+</div>
+<%- include("partials/footer.ejs") %>

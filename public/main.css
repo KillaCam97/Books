@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 60px; /* Add bottom padding */
+}
+
+h1 {
+  font-size: 36px;
+  color: #007bff;
+}
+
+h2 {
+  font-size: 24px;
+  color: #28a745;
+}
+
+form.add-book-form {
+  margin-bottom: 20px;
+}
+
+form.add-book-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form.add-book-form input,
+form.add-book-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+form.add-book-form button {
+  padding: 10px 20px;
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form.add-book-form button:hover {
+  background-color: #138496;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100px;
+  display: block;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bold-blue-label {
+  font-weight: bold;
+  color: blue;
+  display: inline;
+}
